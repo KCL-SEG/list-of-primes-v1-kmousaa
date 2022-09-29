@@ -3,12 +3,19 @@
 
 def primes(number_of_primes):
     list = []
-    count = 1
-    while len(list) <= number_of_primes:
-        for i in range (2,count):
-            if count % i != 0:
-                list.append(count)
+    num = 2
 
-        count +=1
+    while len(list) <= number_of_primes:
+
+      prime = True
+      #prime checker
+      for x in range (2,num):
+        if num % x == 0:
+          prime = False
+
+      if prime:
+        list.append(num)
+
+      num +=1
 
     return list
