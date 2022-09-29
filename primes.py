@@ -5,7 +5,7 @@ def primes(number_of_primes):
     list = []
     num = 2
 
-    while len(list) <= number_of_primes:
+    while len(list) < number_of_primes:
 
       prime = True
       #prime checker
